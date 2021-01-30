@@ -1,60 +1,60 @@
 # shellScript
 Basic learnings of shell scripting
 
-increament the value in shell script 
-	n=$(( n + 1 )) OR (( n++ ))
+	increament the value in shell script 
+n=$(( n + 1 )) OR (( n++ ))
 
 
 
-for Loop
-1)
-for var in 1 2 3 4 
-do 
+	for Loop
+	1)
+	for var in 1 2 3 4 
+	do 
 	echo $var
-done
+	done
 
-2)
-for i in {1..10..2}
-do 
+	2)
+	for i in {1..10..2}
+	do 
 	echo $i
-done
+	done
 
-3)
-for(( i=0; i<10 ;i++ ))
-do 
+	3)
+	for(( i=0; i<10 ;i++ ))
+	do 
 	echo $i
-done 
+	done 
 
-for loop used for commands
+	for loop used for commands
 
 #for loop for the commands
 
-for COMMAND in ls pwd date
-do 
+	for COMMAND in ls pwd date
+	do 
 	echo $COMMAND
 	$COMMAND
-done
+	done
 
 
 
 #select loop 
 
 #it help us in menu based scripting 
-select name in john anand amit
-do 
+	select name in john anand amit
+	do 
 	case $name in
-		john)
-			echo "selected john" ;;
-		anand)
-			echo "selected anand" ;;
-		amit)
-			echo "selected amit" ;;
+	john)
+	echo "selected john" ;;
+	anand)
+	echo "selected anand" ;;
+	amit)
+	echo "selected amit" ;;
 
-		*)
-			echo "Default " ;;
+	*)
+	echo "Default " ;;
 
 	esac
-done 
+	done 
 
 
 
